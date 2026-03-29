@@ -38,12 +38,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="flex flex-col items-center justify-center h-screen">
-        <h1 class="pixel-font-h1 underline">Olá Mundo</h1>
-        <h2 class="pixel-font-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolores!</h2>
-        <h3 class="pixel-font-h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure perferendis magnam cupiditate assumenda dolorem ducimus eaque maxime quam. Dolorum odio rem error expedita maiores necessitatibus?</h3>
-        <button class="m-4 p-3 border-4 border-black cursor-pointer text-3xl font-bold bg-red-500 w-30"><a href="#">Hello world!</a></button>
-        <button class="m-4 p-3 border-2 border-black cursor-pointer w-auto"><a href="https://www.meowbls.com/projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eligendi?</a></button>
+    <div class="flex flex-col items-center justify-center w-screen h-screen">
+        <div class="items-center justify-center justify-self-center items-self-center flex h-screen w-screen bg-[url('./assets/fundo1.png')] bg-cover bg-no-repeat">
+            <div class="container flex flex-col w-auto h-auto absolute top-0 bottom-170 left-0 right-370 m-0 items-center justify-center">
+                <h1 class="pixel-font-h1 text-clifford">Bem Vindo</h1>
+                <h2 class="pixel-font-h2 text-clifford">à Gaymelot</h2>
+            </div>
+            <div class="container flex flex-col w-auto h-auto gap-4 absolute top-170 bottom-0 left-370 right-0 m-0 items-center justify-center">
+                <button class="pixel-font-h1 px-5 text-cyan-700 bg-cyan-200/80 bg-blend-color-burn border-4 border-cyan-700 rounded-4xl shadow-2xl hover:scale-105 duration-100 cursor-pointer hover:bg-cyan-700/80 hover:text-cyan-200 hover:border-cyan-200"><a href="./src/pages/pedido.html">START</a></button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
