@@ -7,14 +7,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/CSS/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./src/scripts/script.js"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+        .pixel-font-h1 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 6rem;
+        }
+        .pixel-font-h2 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 550;
+        font-style: normal;
+        font-size: 4rem;
+        }
+        .pixel-font-h3 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <div class="hero">
+    <div class="flex flex-col items-center justify-center h-screen">
         <h1 class="pixel-font-h1 underline">Olá Mundo</h1>
         <h2 class="pixel-font-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolores!</h2>
         <h3 class="pixel-font-h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure perferendis magnam cupiditate assumenda dolorem ducimus eaque maxime quam. Dolorum odio rem error expedita maiores necessitatibus?</h3>
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
+        <button class="m-4 p-3 border-4 border-black cursor-pointer text-3xl font-bold bg-red-500 w-30"><a href="#">Hello world!</a></button>
+        <button class="m-4 p-3 border-2 border-black cursor-pointer w-auto"><a href="https://www.meowbls.com/projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eligendi?</a></button>
     </div>
 </body>
 </html>
