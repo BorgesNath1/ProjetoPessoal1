@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+#pixel-font-h1{
+font-family: "Pixelify Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: bold;
+font-size: 6rem;
+}
+
+#pixel-font-h2{
+font-family: "Pixelify Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 550;
+font-style: normal;
+font-size: 4rem;
+}
+
+#pixel-font-h3{
+font-family: "Pixelify Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+}
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+.hero {
+display: flex;
+flex-direction: column;
+max-width: 60%;
+place-self: center;
+}
+
+h1, h2, h3 {
+text-align: center;
+}
